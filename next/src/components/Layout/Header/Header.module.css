@@ -1,0 +1,56 @@
+/** @format */
+
+.container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 5px;
+  padding: 1rem 10rem;
+  z-index: 10;
+
+  transition: padding 0.2s ease, background-color 0.2s ease, backdrop-filter 0.2s ease;
+}
+
+.collapsed {
+  padding: 0.2rem 10rem;
+}
+
+.opaque {
+  background-color: #111111d5;
+  border-bottom: 1px solid #222;
+  backdrop-filter: blur(20px);
+}
+
+.left {
+  position: relative;
+  height: 4rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.call_to_action {
+  padding: 1rem 2rem;
+  background-color: var(--orange);
+  display: flex;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert(1) drop-shadow(0 0 0.5rem #ffffff5b);
+  }
+}

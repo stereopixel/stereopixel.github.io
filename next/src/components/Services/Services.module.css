@@ -1,0 +1,106 @@
+/** @format */
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5rem 15rem;
+  border-top: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--orange);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.service {
+  border-left: 1px solid #222;
+  padding: 0rem 3rem;
+  width: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: justify;
+  position: relative;
+}
+.service::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 1px;
+  width: 1px;
+  background-color: var(--orange);
+  background-color: white;
+  box-shadow: 0 0 10px 1px white;
+
+  background-color: var(--orange);
+  box-shadow: 0 0 10px 1px var(--orange);
+}
+.service::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+  height: 1px;
+  width: 1px;
+  background-color: var(--orange);
+  box-shadow: 0 0 10px 1px var(--orange);
+
+  background-color: white;
+  box-shadow: 0 0 10px 1px white;
+
+  background-color: var(--orange);
+  box-shadow: 0 0 10px 1px var(--orange);
+}
+
+.service h3 {
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+.service p {
+  font-size: 0.9rem;
+  max-width: 100ch;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons svg {
+  height: 2rem;
+}
+
+.content > *:nth-child(1) {
+  --c: hsl(270, 40%, 30%);
+}
+.content > *:nth-child(2) {
+  --c: hsl(120, 40%, 30%);
+}
+.content > *:nth-child(3) {
+  --c: hsl(0, 49%, 30%);
+}
+.content > *:nth-child(4) {
+  --c: hsl(180, 40%, 25%);
+}
+.content > *:nth-child(5) {
+  --c: hsl(43, 40%, 30%);
+}
+.content > *:nth-child(6) {
+  --c: hsl(225, 40%, 30%);
+}
