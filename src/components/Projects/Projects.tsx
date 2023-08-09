@@ -34,7 +34,7 @@ export default function Projects() {
     },
     {
       title: "Boulevard",
-      description: "E-Commerce app",
+      description: "A minimalistic e-commerce app.",
       url: "https://shop-on-boulevard.vercel.app/",
       srcUrl: "https://github.com/PedroFFrontend/boulevard",
       screenshot: boulevardScreenshot.src
