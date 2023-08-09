@@ -5,6 +5,8 @@ import styles from "./Projects.module.css"
 import Project from "./Project/Project"
 import frenScreenshot from "public/fren_screenshot.png"
 import portfolioScreenshot from "public/portfolio_screenshot.png"
+import heliosScreenshot from "public/helios_screenshot.png"
+import boulevardScreenshot from "public/boulevard_screenshot.png"
 
 export type ProjectType = {
   title: string
@@ -28,14 +30,14 @@ export default function Projects() {
       description: `Helios brings you visually compelling real-time global weather data, from both the present and the future.`,
       url: "https://helios-nu.vercel.app/",
       srcUrl: "https://github.com/PedroFFrontend/helios",
-      screenshot: frenScreenshot.src
+      screenshot: heliosScreenshot.src
     },
     {
       title: "Boulevard",
       description: "E-Commerce app",
       url: "https://shop-on-boulevard.vercel.app/",
       srcUrl: "https://github.com/PedroFFrontend/boulevard",
-      screenshot: frenScreenshot.src
+      screenshot: boulevardScreenshot.src
     },
     {
       title: "Portfolio",
