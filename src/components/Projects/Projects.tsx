@@ -3,10 +3,10 @@
 import React from "react"
 import styles from "./Projects.module.css"
 import Project from "./Project/Project"
-import frenScreenshot from "public/fren_screenshot.png"
-import portfolioScreenshot from "public/portfolio_screenshot.png"
-import heliosScreenshot from "public/helios_screenshot.png"
-import boulevardScreenshot from "public/boulevard_screenshot.png"
+import frenScreenshot from "public/fren_screenshot.webp"
+import portfolioScreenshot from "public/portfolio_screenshot.webp"
+import heliosScreenshot from "public/helios_screenshot.webp"
+import boulevardScreenshot from "public/boulevard_screenshot.webp"
 
 export type ProjectType = {
   title: string
