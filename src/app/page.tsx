@@ -1,4 +1,5 @@
 /** @format */
+"use client"
 
 import Image from "next/image"
 import styles from "./page.module.css"
@@ -9,14 +10,57 @@ import Projects from "@/components/Projects/Projects"
 import Contact from "@/components/Contact/Contact"
 import Services from "@/components/Services/Services"
 import About from "@/components/About/About"
+import { useEffect } from "react"
+
+const consoleArt = (
+"|=-----❤️-----=    CONTACT ME    =-----❤️-----=|\n"+
+"Hey there!👋 I'm glad you liked the site.\n"+
+"Look under the hood here:      \n"+
+"https://github.com/PedroFFrontend/PedroFFrontend.github.io\n"+
+"\n"+
+"And don't forget to shoot me an email: \n"+
+"pedroferreirafrontend@gmail.com\n"+
+"if you need me to come do awesome work at your company 🤝\n"+
+"               __,...__               \n"+
+"           _,-'::::::::`-.            \n"+
+"         ,'::,----._::::::`.          \n"+
+"       ,'::,' /\\,-. \\:::::::`.      \n"+
+"      /::::| ;    | |:::::::::`.      \n"+
+"      |:::::`._   \\ |:::::::::::\\    \n"+
+"    __\\,:--''--`_--':::::::::::::\\  \n"+
+"  `'--::__:::::::`-:_:::::::::::::\\  \n"+
+"      /--.`'--:_:::::`-::::::::::::\\ \n"+
+"     /,-_.'    _`-:_::::`:::::::::::\\\n"+
+"     / /o\|   ,-_`-.`--:::`::::::::::)\n"+
+"    || \\_/|  / /o\\         `:,'''-:'\n"+
+"  (#__`-_/   | \\_/|        /##|  ,-.\\\n"+
+" ,''     `-. `.__/       ,'###| /   ||\n"+
+"/           \\      ,    (##### /    ||\n"+
+"|           |___,-##\     /##/ \\__,'/\n"+
+"\\          /########)    |#,'|__..-' \n"+
+" `-..__..-'######)          /         \n"+
+"     \\`.###'`\"\"'           /       \n"+
+"      \\\\\\__//            ,'        \n"+
+"       \\`--'         _,-'            \n"+
+"        `-..___..--''                 \n")
+
 
 export default function Home() {
+
+  useEffect(() => console.log(consoleArt),[])
+
+
+
+
+
+
+
   return (
     <>
       <Hero />
       <Services />
       <Projects />
-      <About />
+      {/* <About /> */}
       <Contact />
     </>
 

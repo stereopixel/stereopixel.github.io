@@ -32,14 +32,12 @@ export default function Header() {
   return (
     <header className={`${styles.container} ${collapsed ? styles.collapsed : ""} ${opaque ? styles.opaque : ""}`}>
       <div className={styles.left}>
-        <div className={styles.logo_container}>{logo}</div>
+        <a href="#hero" className={styles.logo_container}>{logo}</a>
       </div>
       <div>
         <nav className={styles.nav}>
-          <a href="#hero">Home</a>
           <a href="#skills">Skills</a>
           <a href="#works">Works</a>
-          <a href="#about">About</a>
           <a href="#contact" className={styles.call_to_action}>
             {mailIcon} Get in touch
           </a>

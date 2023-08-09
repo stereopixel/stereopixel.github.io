@@ -12,19 +12,22 @@ export default function Project({ title, description, url, srcUrl,screenshot }: 
       <div className={styles.top_right_corner} />
       <div className={styles.bottom_left_corner} />
       <div className={styles.bottom_right_corner} />
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
-      <div className={styles.buttons}>
-        <a className={styles.view_project_button} href={url} target="_blank" rel="noopener noreferrer">
-          {eyeIcon} View Project
-        </a>
-        <a className={styles.view_code_button} href={srcUrl} target="_blank" rel="noopener noreferrer">
-          {githubIcon} View Source Code
-        </a>
+      <div className={styles.content}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.description}>{description}</p>
+        <div className={styles.buttons}>
+          <a className={styles.view_project_button} href={url} target="_blank" rel="noopener noreferrer">
+            {eyeIcon} View Project
+          </a>
+          <a className={styles.view_code_button} href={srcUrl} target="_blank" rel="noopener noreferrer">
+            {githubIcon} View Source Code
+          </a>
+        </div>
       </div>
       <div className={styles.screenshot_container}>
         <img src={screenshot} alt={title}/>
       </div>
+      <div className={styles.image_container}/>
     </div>
   )
 }

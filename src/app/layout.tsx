@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        {/* <Header /> */}
         <main className={styles.main}>{children}</main>
       </body>
     </html>

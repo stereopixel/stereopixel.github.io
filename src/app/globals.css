@@ -22,7 +22,14 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-  --orange: #fd5901;
+  --primary: #a78bfa;
+  --secondary: #DEFA8B;
+
+  --primary: #E36D1C;
+  --secondary: #1C92E3;
+
+  --primary: #1C92E3;
+  --secondary: #E36D1C;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,7 +88,7 @@ a {
   }
   body {
     background: none;
-    background-color: #111;
+    background-color: #121212;
   }
 }
 

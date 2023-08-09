@@ -6,23 +6,25 @@ import styles from "./Hero.module.css"
 export default function Hero() {
   return (
     <div id="hero" className={styles.container}>
-      <div className={styles.scroll}>
-        <div /> Scroll down
-      </div>
+      
       <div className={styles.description}>
-        <h1 className={styles.intro}>Hi, I&apos;m Pedro.</h1>
-        <h2 className={styles.titles}>
-          <div className={styles.title_engineer}>
+        <h1 className={styles.intro}>GM, I&apos;m Pedro.</h1>
+        <div className={styles.titles}>
+          I build 
+          <h2 className={styles.title_engineer}>
             {/* {designIcon2}  */}
-            Software Engineer
-          </div>
-          <div className={styles.title_developer}>
+            Software & Math
+          </h2>
+          {/* <div className={styles.title_developer}> */}
             {/* {codeIcon}  */}
-            Front-end Developer
-          </div>
-          {/* <div className={styles.title_mathematician}>Mathematician</div> */}
-        </h2>
+            {/* Front-end Developer */}
+          {/* </div> */}
+          {/* <div className={styles.title_mathematician}>Math</div> */}
+        </div>
         <div className={styles.buttons}>
+          <a href="#skills" className={styles.projects_button}>
+            See my skills
+          </a>
           <a href="#works" className={styles.projects_button}>
             See my work
           </a>
@@ -32,10 +34,10 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
-      <div className={styles.image_container}></div>
-      
-      {mailIcon}
+      <div className={styles.scroll}>
+        {downArrow}
+      </div>
+      <div className={styles.image_container}/>
     </div>
   )
 }
@@ -82,8 +84,12 @@ const codeIcon = (
 
 
 const mailIcon = (
-  <svg xmlns="http://www.w3.org/2000/svg"  height="1em" viewBox="2 2 20 20" fill="red" stroke="#fff" strokeWidth="2"  strokeLinejoin="round" strokeLinecap="round">
+  <svg xmlns="http://www.w3.org/2000/svg"  height="1rem" viewBox="2 2 20 20" fill="none" stroke="#fff" strokeWidth="2"  strokeLinejoin="round" strokeLinecap="round">
     <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"   />
     <rect x="3" y="5" width="18" height="14" rx="2"/>
   </svg>
 )
+
+const downArrow = <svg height="2em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 10L12 15L17 10" stroke="gray" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>

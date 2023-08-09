@@ -8,14 +8,13 @@ export default function Services() {
     <div id="skills" className={styles.container}>
       <div className={styles.header}>
         <h2 className={styles.title}>Skills</h2>
-        <p>Let me show you how I can help you.</p>
+        {/* <p>Let me show you how I can help you.</p> */}
       </div>
       <div className={styles.content}>
         <div className={styles.service}>
-          <h3>Web Development</h3>
+          <h3>Front-end Development</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo vel pariatur qui asperiores, voluptas et mollitia, facere sequi
-            dignissimos, nisi illum illo! Blanditiis, cum cupiditate voluptate maiores nemo ex!
+          Coding things from scratch, and bringing ideas to life in the browser.
           </p>
           <div className={styles.icons}>
             {reactIcon}
@@ -32,8 +31,7 @@ export default function Services() {
         <div className={styles.service}>
           <h3>Web3 Applications</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae officiis natus, architecto nulla repudiandae explicabo dolor, veritatis hic
-            quaerat dolorum repellendus dolores voluptas consectetur laborum magnam!
+            Designing fast and reliable solutions to bring web3 projects to life.
           </p>
           <div className={styles.icons}>
             {ethereumIcon}
@@ -42,10 +40,19 @@ export default function Services() {
           </div>
         </div>
         <div className={styles.service}>
-          <h3>Data Science and Artificial Intelligence</h3>
+          <h3>Bots</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatem, architecto fugiat nulla fuga soluta, esse assumenda placeat nam
-            minima commodi provident eveniet dignissimos facilis! Obcaecati laborum minus nemo facere.
+            Creating custom Telegram and Discord bots to satisfy niche project's needs.
+          </p>
+          <div className={styles.icons}>
+            {telegramIcon}
+            {discordIcon}
+          </div>
+        </div>
+        <div className={styles.service}>
+          <h3>AI & Data Science</h3>
+          <p>
+            Analyzing data using advanced statistical methods, as well as training and deploying neural network models.
           </p>
           <div className={styles.icons}>
             {pythonIcon}
@@ -56,6 +63,7 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <div className={styles.image_container}/>
     </div>
   )
 }
@@ -316,3 +324,16 @@ const websocketIcon = (
     ></path>
   </svg>
 )
+
+const discordIcon = <svg  viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid">
+      <title>Discord</title>
+    <path fill="#fff" fillRule="nonzero" d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"/>
+</svg>
+
+const telegramIcon = <svg viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid">
+    <title>Telegram</title>
+    <path fill="#40B3E0" d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"/>
+    <path fill="#FFFFFF" d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"/>
+    <path fill="#D2E5F1" d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"/>
+    <path fill="#B5CFE4" d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"/>
+</svg>

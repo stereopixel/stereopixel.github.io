@@ -4,6 +4,7 @@ import React from "react"
 import styles from "./Projects.module.css"
 import Project from "./Project/Project"
 import frenScreenshot from "public/fren_screenshot.png"
+import portfolioScreenshot from "public/portfolio_screenshot.png"
 
 export type ProjectType = {
   title: string
@@ -36,12 +37,19 @@ export default function Projects() {
       srcUrl: "https://github.com/PedroFFrontend/boulevard",
       screenshot: frenScreenshot.src
     },
+    {
+      title: "Portfolio",
+      description: "This portfolio website.",
+      url: "https://pedroffrontend.github.io/",
+      srcUrl: "https://github.com/PedroFFrontend/PedroFFrontend.github.io",
+      screenshot: portfolioScreenshot.src
+    },
   ]
 
   return (
     <div className={styles.container} id="works">
       <div className={styles.header}>
-        <h2 className={styles.title}>Works</h2>
+        <h2 className={styles.title}>Selected Works</h2>
         {/* <p>Let me show you what I can do.</p> */}
       </div>
       <div className={styles.content}>
@@ -49,6 +57,9 @@ export default function Projects() {
           <Project key={i} {...p} />
         ))}
       </div>
+
+      {/* <div className={styles.image_container}/> */}
+
     </div>
   )
 }
