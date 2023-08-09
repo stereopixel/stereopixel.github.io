@@ -41,7 +41,7 @@ export default function Header() {
           <a href="#works">Works</a>
           <a href="#about">About</a>
           <a href="#contact" className={styles.call_to_action}>
-            Get in touch
+            {mailIcon} Get in touch
           </a>
         </nav>
       </div>
@@ -57,5 +57,12 @@ const logo = (
         fill="#000"
       />
     </g>
+  </svg>
+)
+
+const mailIcon = (
+  <svg xmlns="http://www.w3.org/2000/svg"  height="1.25em" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2"  strokeLinejoin="round" strokeLinecap="round">
+    <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"   />
+    <rect x="3" y="5" width="18" height="14" rx="2"/>
   </svg>
 )

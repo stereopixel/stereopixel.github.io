@@ -3,8 +3,9 @@
 import React from "react"
 import styles from "./Project.module.css"
 import { ProjectType } from "../Projects"
+import Image from "next/image"
 
-export default function Project({ title, description, url, srcUrl }: ProjectType) {
+export default function Project({ title, description, url, srcUrl,screenshot }: ProjectType) {
   return (
     <div className={styles.container}>
       <div className={styles.top_left_corner} />
@@ -20,6 +21,9 @@ export default function Project({ title, description, url, srcUrl }: ProjectType
         <a className={styles.view_code_button} href={srcUrl} target="_blank" rel="noopener noreferrer">
           {githubIcon} View Source Code
         </a>
+      </div>
+      <div className={styles.screenshot_container}>
+        <img src={screenshot} alt={title}/>
       </div>
     </div>
   )

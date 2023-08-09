@@ -3,33 +3,38 @@
 import React from "react"
 import styles from "./Projects.module.css"
 import Project from "./Project/Project"
+import frenScreenshot from "public/fren_screenshot.png"
 
 export type ProjectType = {
   title: string
   description: string
   srcUrl: string
   url: string
+  screenshot: string
 }
 
 export default function Projects() {
-  const projects: ProjectType[] = [
+  const projects: ProjectType[] = [    
+    {
+      title: "F.R.E.N.",
+      description: "A network-based blockchain explorer.",
+      url: "https://fren-explorer.vercel.app/",
+      srcUrl: "https://github.com/PedroFFrontend/fren",
+      screenshot: frenScreenshot.src
+    },
     {
       title: "Helios",
       description: `Helios brings you visually compelling real-time global weather data, from both the present and the future.`,
-      url: "",
-      srcUrl: "",
+      url: "https://helios-nu.vercel.app/",
+      srcUrl: "https://github.com/PedroFFrontend/helios",
+      screenshot: frenScreenshot.src
     },
     {
-      title: "Megabite",
-      description: "Food ordering E-Commerce app",
-      url: "",
-      srcUrl: "",
-    },
-    {
-      title: "Fren",
-      description: "Web3 App",
-      url: "",
-      srcUrl: "",
+      title: "Boulevard",
+      description: "E-Commerce app",
+      url: "https://shop-on-boulevard.vercel.app/",
+      srcUrl: "https://github.com/PedroFFrontend/boulevard",
+      screenshot: frenScreenshot.src
     },
   ]
 
@@ -37,7 +42,7 @@ export default function Projects() {
     <div className={styles.container} id="works">
       <div className={styles.header}>
         <h2 className={styles.title}>Works</h2>
-        <p>Let me show you what I do.</p>
+        {/* <p>Let me show you what I can do.</p> */}
       </div>
       <div className={styles.content}>
         {projects.map((p, i) => (

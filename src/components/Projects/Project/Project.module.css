@@ -84,3 +84,24 @@
   box-shadow: 0 0 10px 2px teal;
   background-color: teal;
 }
+
+.screenshot_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  
+  width: 500px;
+  min-width: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.screenshot_container img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border-left: 1px dashed #222;
+
+}
