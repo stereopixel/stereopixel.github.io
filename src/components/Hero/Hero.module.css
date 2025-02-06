@@ -87,11 +87,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 0 2rem; */
-  /* padding: 1rem 2rem; */
-  /* border: none; */
-  /* font-size: inherit; */
-  /* font-family: inherit; */
 }
 
 .projects_button {
@@ -117,10 +112,6 @@
 .projects_button:hover {
   border-color: var(--secondary);
   color: var(--secondary);
-}
-
-.contact_button:hover svg {
-  /* stroke: black !important; */
 }
 
 .scroll {
@@ -193,7 +184,7 @@
   }
 }
 
-@media (width < 450px) {
+@media (width < 550px) {
   .titles {
     font-size: 1.5rem;
   }

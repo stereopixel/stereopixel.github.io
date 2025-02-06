@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
         <div>
           <a
-            href="http://github.com/stereopixel"
+            href="https://github.com/stereopixel"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.gh_link}

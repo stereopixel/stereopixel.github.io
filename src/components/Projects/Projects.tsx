@@ -59,15 +59,12 @@ export default function Projects() {
     <div className={styles.container} id="works">
       <div className={styles.header}>
         <h2 className={styles.title}>Selected Works</h2>
-        {/* <p>Let me show you what I can do.</p> */}
       </div>
       <div className={styles.content}>
         {projects.map((p, i) => (
           <Project key={i} {...p} />
         ))}
       </div>
-
-      {/* <div className={styles.image_container}/> */}
     </div>
   );
 }
