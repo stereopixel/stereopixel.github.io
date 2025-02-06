@@ -22,7 +22,7 @@ export default function Projects() {
     {
       title: "Homesteader",
       description: "A WIP software platform to manage your homestead.",
-      srcUrl: "https://github.com/stereopixel/stereopixel.github.io",
+      srcUrl: "https://github.com/stereopixel/homesteader",
       screenshot: homesteaderScreenshot.src,
     },
     {
